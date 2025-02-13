@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="weather.css">
+        <title>Home - NimbusNow</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!--Navigation-->
+        <header>
+            <a href="weather.html" class="nimbusLogo">
+                <img src='homepagelogo1.png' alt='NimbusNowLogo'>
+            </a>
+
+            <!--navigation list-->
+            <ul class="navvbar">
+                <li><a href="weather.html">Weather Near You</a></li>
+                <li><a href="summary.html">Summary</a></li>
+            </ul> 
+        </header>
+
+        <div class="whole">
+          <div class="weather-app">
+            <div class="container">
+
+              <!-- aesthetic little thing - to fill space -->
+              <h3 class="brand">*ੈ✩‧₊˚༺☆༻*ੈ✩‧₊˚</h3>
+              <div>
+
+                <!-- setting random default temp - see how it will look on screen -->
+                <h1 class="temp">23&#176;</h1>
+                <div class="city-time">
+
+                  <!-- setting Sydney as default city - see how it will look on screen -->
+                  <h1 class="name">Sydney</h1>
+                  <small>
+
+                    <!-- setting random default time - see how it will look on screen -->
+                    <span class="time">06:09</span> - 
+
+                    <!-- setting random default date - see how it will look on screen -->
+                    <span class="date">Monday Sep 19</span>
+                  </small>
+                </div>
+
+                <!-- setting random default icon - see how it will look on screen -->
+                <div class="weather">
+                  <img src="./icons/day/113.png" class="icon" alt="icon" width="50" height="50">
+                  <span class="condition">Cloudy</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- HTML for js; search button -->
+            <div class="panel">
+              <form id="locationInput">
+                <input type="text" class="search" placeholder="Search Location...">
+                <button type="submit" class="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+              
+              <!-- list of closet cities to us -->
+              <ul class="cities">
+                <li class="city">Canberra</li>
+                <li class="city">Melbourne</li>
+                <li class="city">Brisbane</li>
+                <li class="city">Perth</li>
+              </ul>
+              
+              <!-- extra weather details - will do if have time -->
+              <ul class="details">
+                <h4>Weather Details</h4>
+                <li>
+                  <span>Cloudy</span>
+                  <span class="cloud">89%</span>
+                </li>
+                <li>
+                  <span>Humidity</span>
+                  <span class="humidity">64%</span>
+                </li>
+                <li>
+                  <span>Wind</span>
+                  <span class="wind">8km/h</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+            <!-- link to javascript -->
+            <script src="weather.js"></script>
+    </body>
+</html>
+

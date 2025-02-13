@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+/* natural elements */
+body {
+    background-color: floralwhite;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: Macondo;
+    font-size: 20px;
+}
+
+/* id's */
+#enlarge {
+    font-size: 20px;
+    color: #f3e198;
+}
+
+#navbar {
+    text-align: center;
+    color: #4b5687;
+    font-family: 'Rubik Dirt';
+    text-decoration: none;
+    font-weight: 200;
+    z-index: -1;
+    margin-bottom: 0;
+}
+
+#navbar:hover {
+    color: #f3e198;
+}
+
+#sun {
+    width: 415px;
+    height: 415px;
+}
+
+#cloudy {
+    width: 415px;
+    height: 415px;
+}
+
+/* classes */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.grandEntrance {
+    width: 2000px;
+   /* animation: fadeIn 1s; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.grandEntrance:hover {
+    transform:scale(1.30);
+    z-index: 2;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1%; }
+}
+
+.weatherIcons {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.header {
+    height: 100vh;
+}
+
+.skyTime  {
+    position: absolute;
+    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}

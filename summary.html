@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="weather.css">
+        <title>Home - NimbusNow</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="summary.css">
+
+    </head>
+    <body>
+        <!--Navigation-->
+        <header>
+            <a href="weather.html" class="nimbusLogo">
+                <img src='homepagelogo1.png' alt='NimbusNowLogo'>
+            </a>
+
+            <!--navigation list-->
+            <ul class="navvbar">
+                <li><a href="weather.html">Weather Near You</a></li>
+                <li><a href="summary.html">Summary</a></li>
+            </ul> 
+        </header>
+  
+        <main>
+            <h1 class="overlay">NimbusNow and our journey</h1>
+            <img src="image.jpg" alt="Beautiful cold colour sunset">
+        </main>
+
+        <div class="infinitescroll">
+            <ul class="infinitescroll_inner">
+                <li><img src='./horizontal/cloud.png' alt='cloudy'></li>
+                <li><img src='./horizontal/rain.png' alt='cloudy'></li>
+                <li><img src='./horizontal/rainbow.png' alt='cloudy'></li>
+                <li><img src='./horizontal/snow.png' alt='cloudy'></li>
+                <li><img src='./horizontal/sunny.png' alt='cloudy'></li>
+                <li><img src='./horizontal/wind.png' alt='cloudy'></li>
+                <li><img src='./horizontal/cloud.png' alt='cloudy'></li>
+                <li><img src='./horizontal/rain.png' alt='cloudy'></li>
+                <li><img src='./horizontal/rainbow.png' alt='cloudy'></li>
+                <li><img src='./horizontal/snow.png' alt='cloudy'></li>
+                <li><img src='./horizontal/sunny.png' alt='cloudy'></li>
+                <li><img src='./horizontal/wind.png' alt='cloudy'></li>
+            </ul>
+        </div>
+
+        <div class="content-container">
+          <div class="start">
+            <h3>Beginning of Slight Clouds</h3>
+            <p class="beginning">The start of this website was a rocky one...<br> I, Janice, didn't really have a rough layout and plan ready before tackling this major project
+            <br>However, I created a rough logo on <a id='canva' href='https://www.canva.com/'>Canva</a> for the official website.<br> There was a few trials and error in the process regarding the colour palette, sizing and resolution.</p>
+           
+           <!-- alternating images of old and new website logo -->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 2</div>
+                    <img src="choppedlogo.png" alt="Old logo" style="width:100%">
+                    <div class="text">Draft Logo</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 2</div>
+                    <img src="500500.png" alt="Current logo" style="width:100%">
+                    <div class="text">Accepted Logo</div>
+                </div>
+            
+            </div>
+            
+            <!-- Dots for navigation -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+        </div>
+
+    <br>
+
+    <br>
+
+    <br>
+
+        <section>
+            <h3>Gathering Lightning Thoughts...</h3>
+            <p class="beginning">For the front page, I took inspiration and asked a peer (Anastasia) for assistance<br> with the clickable logo that transitions into the weather webpage. I learnt about timing the animation transition <br> from one webpage to another through css @keyframes. 
+               Additionally, I set the background to a <br> timelapse of evolving weather I got off youtube: credits to <a id='canva' href='https://www.youtube.com/@TimestormFilms'>Martin (Timestorm Film)</a>.
+               <br>
+               <br>
+               <iframe id='ya' width="560" height="315" src="https://www.youtube.com/embed/NW4AP3gIu-0?si=1bVbQ7O_zoNiivTj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               <br>
+               <br>
+
+               As for the sign-up page, I created a secondary page that checks the form validation; takes in input from <br> the user and verifys if the boxes have been filled or not, returning either a completion or 'Please fill out the boxes'.<br>
+               In an attempt to advance even further, I tried connecting an online SMTP server (as seen below in my javascript code). <br> <br> 
+               <iframe id='ya' width="560" height="315" src="signup.js"></iframe> </p>
+        </section>
+
+        <br>
+
+        <section>
+            <h3>The Storm</h3>
+            <p class="beginning">Making the weather page, at first I created a couple of storyboards to make a <br> rough draft/layout of how I want the website to appear to its users.<br></p>
+            <br>
+
+            <div class="image-container">
+            <img class='storyboard' src="frontpage.png" alt="Website storyboard drafts">  <img class='storyboard' src="scrollpage.png" alt="Website storyboard drafts"> 
+            </div> <br>
+
+            <p class="beginning">Starting out, I created the navigation bar at the top to which I struggled with making the navigation bar a block. <br> I tried utilising artifical intelligence to spot the error in my code and found that I hadn't set the colour and opacity of the bar, <br> creating an illusion of a navigation bar instead of a still block regardless of whether or not the user scrolls down or not; <br> so I set the position to fixed.
+            Next over, I went on a research spree on learning about weather API's, how to fetch data and import the files. <br> The learning process was fairly easy compared to the steep hill of hardship when it came to the practical. <br>
+            I started out my typing out the default screen of the weather site, however, with the particular API I'm using it would <br> only allow cities and not specific places/suburbs such as Cabramatta. I also used the weatherapi icons <br> and aligned it with the changing weather.
+            The CSS component was fairly easy: I set the background, set the side panel with <br> the search button in addition to other weather-related information and nearby cities <br> (respective to our area - doesn't change depending on the user's location so that could be an extension task to complete).</p>
+        </section>
+
+        <section>
+            <h3>Clearing Skies</h3>
+            <p class="beginning"> Although the javascript component was challenging at first, I researched more to refine my scripting skills and broke it up into parts: </p>
+            <div class="middle1">
+                <ol>
+                    <li>Adding a click event that changes the cities info using fetchWeatherData();</li>
+                    <li>Search validation if the user clicks on the search button, an alert will <br> show, if not then screen will reload to entered city and display its data</li>
+                    <li>Created a function that gets and returns the day, date and time</li>
+                    <li>Lastly, putting everything together under the fetchWeatherData(); function <br> and called it at the end</li>
+                </ol>  
+
+            <iframe id="ya" width="560" height="315" src="weather1.js"></iframe>
+
+        </section>
+
+        </div>
+
+        <section>
+            <h3>Smooth Sailing!</h3>
+            <p class="beginning">After the javascript, I found a few errors with the overall appearance of the website so I changed the background images to <br> higher-quality captures and fixed the yellow overlay on my glassmorphism panel that holds the extra information + nearby cities. <br>
+                Moreover, I opened attempted learning additional CSS page transitions - adding a better transntion for when the user clicks the logo <br> on the front page. 
+                Creating this website has not only allowed me ot refresh my skills in HTML, CSS and Javascript but also has helped me <br> gain confidence in my js coding,
+                through all the tutorials I've read and watched online to the Grok Leanring and Code Combat tasks. <br> Although I found myself struggling more than enjoying myself, as I allowed myself to fail (mainly in linking the weatherapi) this task has <br>
+                allowed me to enjoy the process of trial and error rather than staying behind the comfortable threshold of 'passable' and 'overachieving'. <br>
+                Nontheless, NimbusNow grants you weather all day, everyday<br>
+                <br>
+                Whether the weather is good or bad.
+            <br>
+            <br>
+                <img id='kendrick' src="kendrickgettinjiggy.gif">
+                
+        </section>
+
+        <footer>
+            <p>© 2025 Nimbusnow</p>
+        </footer>
+
+        <script src="summary.js"></script>
+    </body>
+</html>

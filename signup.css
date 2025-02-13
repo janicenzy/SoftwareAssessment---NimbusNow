@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Macondo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gideon Roman';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: ivory;
+}
+
+/* classes */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;    
+}
+
+.signUp h2 {
+    font-size: 40px;
+    color: ivory;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+p a {
+    text-align: center;
+    text-decoration: none;
+    color: #4b5687;
+    font-size: 20px;
+    font-family: 'Gideon Roman';
+}
+
+p a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.signUp form {
+    width: 800px;
+    text-align: center;
+}
+
+form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .textarea-field .error-msg {
+    margin-top: -10px;
+}
+
+.field .item {
+    width: 800px;
+    padding: 18px;
+    background-color: rgb(255, 255, 240, 0.5);
+    border: 2px solid ivory;
+    outline: none;
+    border-radius: 6px;
+    font-size: 18px;
+    margin: 12px 0;
+    transition: .5s;
+}
+
+.field .item:hover {
+    width: 800px;
+    padding: 18px;
+    background-color: rgb(255, 255, 240, 0.5);
+    border: 2px solid antiquewhite;
+    box-shadow: 0 0 10px antiquewhite;
+    outline: none;
+    border-radius: 6px;
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+.field.error .item {
+    border-color: #D93025;
+}
+
+.field.error .error-msg {
+    display: block;
+}
+
+.field .error-msg {
+    font-size: 14px;
+    color: brown;
+    text-align: left;
+    margin: -5px 0 10px;
+    font-weight: bold;
+    font-family: 'Gideon Roman';
+    display: none;
+}
+
+.input-box .input-field {
+    width: 48.5%;
+}
+
+form .textarea-field .item {
+    resize: none;
+}
+
+.skyTime  {
+    position: fixed;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+form button {
+    padding: 12px 32px;
+    background: ivory;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px ivory;
+    font-size: 16px;
+    color: #4b5687;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+form button:hover {
+    box-shadow: none;
+}
+
